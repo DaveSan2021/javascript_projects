@@ -1,0 +1,39 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#container {
+    margin: auto; 
+    width: 450px;
+}
+
+#container div {
+    background-color: blue;
+}
+
+p {
+    color:white;
+    padding: 60px;
+    font-size: 175%;
+}
+ 
+div.rounded-rectangle {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;   
+}
+
+div.bottom-rounded-rectangle {
+    border-radius: 0 0 20px 20px;
+}
+
+div.circle {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 100px 100px 100px 100px;
+    line-height: 40px;
+}
+
+

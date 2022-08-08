@@ -1,0 +1,23 @@
+.form-container form{
+    display: grid;
+    position: relative;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-container input{
+
+    flex-basis: 100%;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    border: none;
+    font-size: 1.6rem;
+}
+
+
+

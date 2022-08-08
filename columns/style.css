@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    /*https://cssgradient.io/*/
+    background-color: #ABFF9E;
+    
+}
+#container {
+    width: 900px;
+    padding: 30px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+#header h1 {
+    background: url(/Capture.PNG) top left no-repeat;
+    width: 300px;
+    height: 50px;
+    text-indent: -9999px;
+}
+
+#header h1 a:link, #header h1 a:visited {
+    display: block;
+    width: 300px;
+    height: 50px;
+}
+
+#nav {
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
+}
+
+#nav li{
+    list-style: none;
+    float: left;
+    padding: 0;
+}
+
+#nav li a:link, #nav li a:visited {
+    text-decoration: none;
+    padding: 10px;
+    display: block; /*in line elements by default, add block to add vertical padding*/
+    border-right: 1px solid #ABFF9E;
+}
+
+#nav li a:hover {
+    background-color: #FFAD9E;
+    color: #ABFF9E;
+}
+#body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 70%, rgba(183,255,198,1) 100%);
+}
+
+#body p {
+    line-height: 1.6em;
+}
+
+.main {
+    width: 600px;
+    float: left; 
+}
+
+
+.main-inner {
+    padding: 0 60px 0 0; /*top right bottom left*/
+}
+
+.side {
+    width: 300px;
+    float: left; 
+}
+
+#footer {
+    background-color: yellowgreen;
+}
+
+.clearfix:after {
+    
+    content: ".";
+
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    
+}
+   
+.clearfix {display: inline-block;}
+    
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+
+.clearfix {display: block;}
+/* End hide from IE-mac */
+    

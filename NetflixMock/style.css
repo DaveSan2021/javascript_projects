@@ -1,0 +1,393 @@
+:root {
+    --primary-color: #e50914;
+}
+
+/*Reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: rgb(26, 26, 26);
+}
+
+ul {
+    list-style: none;
+}
+
+h1, h2, h3, h4 {
+    color: white;
+}
+
+.showcase-content h1 {
+    padding: 160px 0px 8px 0px;
+    width: 700px;
+    font-size: 400%;
+}
+
+.showcase-content h2 {
+    padding: 10px 0px 22px 0px;
+    font-weight: 100;
+}
+
+.showcase-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+    color: white;
+    font-size: 120%;
+    font-weight: 200;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.showcase-top {
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+div.showcase-top img  {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 7%;
+    transform: translate(-50%, -50%); /*deals with top being applied to the size of the image*/
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%); /*deals with top being applied to the size of the image*/
+}
+
+.showcase-content {
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.enter-email {
+    display: grid;
+    grid-template-columns: 56% 1fr 1fr;
+    grid-column-gap: 0;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.form-container{
+    justify-self: end;
+}
+
+input {
+    resize: horizontal;
+    width: 500px;
+    height: 70px;
+}
+
+.perks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 7px;
+    background-color: rgb(0, 0, 0);
+    padding: 0px 0px 60px 0px;
+    height: 440px;
+}
+
+.div1 {
+    grid-column-gap: 100px;
+}
+
+.div1 img {
+    width: 540px;
+}
+
+.middleh1 {
+    font-size: 320%;
+}
+
+.middlep {
+    color: white; 
+    font-size: 160%;
+}
+
+.enjoytext {
+    width: 500px;
+    padding: 140px 0px 100px 0px;
+    justify-self: end;
+}
+
+.mobile {
+    width: 500px;
+    z-index: 1;
+    float: left;
+    margin-top: 30px;
+    margin-left: 330px;
+}
+
+.boxshot {
+    width: 58px;
+    position: relative;
+    float: right;
+    top: 295px;
+    right: 48.5%;
+    z-index: 3;
+}
+
+.download-icon {
+    width: 50px;
+    position: relative;
+    float: right;
+    top: 310px;
+    right: 18%;
+    z-index: 3;
+}
+
+.form-container {
+    min-height: 50px;
+}
+
+.boxshot-container {
+
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: grey;
+    width: 320px;
+    height: 100px;
+    float: right;
+    z-index: 2;
+    position: relative;
+    bottom: 120px;
+    right: 22%;
+    background-color: black;
+}
+
+.boxshot-container p{
+
+    color: white;
+    font-size: 100%;
+    font-weight: bold;
+    margin: 40px 75px;
+    z-index: -2;
+}
+
+.downloadtext {
+
+    width: 600px;
+    text-align: left;
+    padding: 130px 0px 0px 0px;
+}
+
+.watch-anywhere {
+    width: 500px;
+    padding: 140px 0px 0px 0px;
+    justify-self: end;
+}
+
+.div3 {
+    padding-top: 60px;
+    height: 550px;
+    grid-column-gap: 100px;
+}
+
+.devices-pile {
+    width: 600px;
+}
+
+.kidsValueProp {
+    width: 500px;
+    justify-self: right;
+    padding-top: 40px;
+    margin-right: 40px;
+}
+
+.kids-profile {
+    width: 600px;
+    text-align: left;
+    padding: 140px 0px 50px 30px;
+}
+
+.div4 {
+    height: 550px;
+}
+
+.div5 {
+    margin-top: 7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.div5 h1{
+    text-align: center;
+    padding: 70px 0px 50px 0px;
+}
+
+.div5 section {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.showcase {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: -2;
+    background: url('/images/catalogBack.jpg') no-repeat center center/cover;
+}
+
+.showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    box-shadow: inset 10px 25px 50px black, inset -10px -25px 50px black;
+}
+
+.button {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.6rem 1.1rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+
+.button-rounded {
+    border-radius: 3px;
+}
+
+.button-lg {
+    font-size: 2rem;
+    padding: 1.1rem 1.4rem;
+    letter-spacing: 1px;
+}
+
+.button:hover {
+    opacity: 0.9;
+}
+
+.dropbutton {
+    background-color: transparent;
+    color: white;
+    padding: 0.5rem 0.6rem;
+    font-size: 1rem;
+    text-align: center;
+    border-color: white;
+    float: right;
+    position: relative;
+    top: 45px;
+    right: 6%;
+    transform: translate(-50%, -50%); /*deals with top being applied to the size of the image*/
+    border-style:solid;
+    border-width: 1px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: grey;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: blue;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(65, 65, 65);
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    width: 850px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 150%;
+    display: block;
+    margin: 7px auto;
+}
+  
+  /* Style the accordion panel. Note: hidden by default */
+.panel {
+    background-color: rgb(65, 65, 65);
+    color: white;
+    padding: 20px;
+    width: 850px;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 150%;
+    margin: auto;
+    overflow: hidden;
+    display: none;
+    transition: 0.4s ease-out;
+}
+
+.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 80%;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+*html .clearfix{height:1%;}
+.clearfix {display: block;}
+

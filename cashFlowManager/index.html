@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Cash Flow Manager</title>
+    <script src="https://kit.fontawesome.com/eb45e32266.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+</head>
+<body>
+
+    <div class="title">
+        <h1>
+            Cash Flow Manager
+        </h1>
+    </div>
+
+    <div class="alert-box">
+        <p class="alert">Alert</p>
+    </div>
+
+    <div class="card">
+
+        <div class="budget">
+
+            <input type="text" class="enter-budget" name = "defaultInputBudget" placeholder="Enter Budget" id="budgetInput">
+    
+            <button class="enter-budget-button">
+                Enter
+            </button>
+    
+            <h2 class="current-budget" id="budgetDisplay">
+                Current Budget: $0
+            </h2>
+    
+        </div>
+    
+        <div class="expense-counter">
+    
+            <input type="text" class="enter-expense" name = "expenseName" placeholder="Enter Expense Name" id="expenseInput">
+            <input type="text" class="enter-expense-type" name = "expenseType" placeholder="Enter Expense Type" id="expenseTypeInput">
+            <input type="text" class="enter-expense-amount" name = "expenseAmount" placeholder="Enter Expense Amount" id="expenseAmountInput">
+    
+            <button class="add-expense-button">
+                Add
+            </button>
+            
+            <div class="expense-list-container">
+
+                <div class="expense-list">
+            
+                </div>
+                
+                <div class="clear-button-container">
+                    <button class="clear-button">
+                        Clear All
+                    </button>
+                </div>
+                
+            </div>
+
+            <h2 class="current-expense-total" id="expenseDisplay">
+                Current Expenses: $0
+            </h2>
+
+
+        </div>
+
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+</body>
+</html>

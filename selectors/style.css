@@ -1,0 +1,33 @@
+/*type selectors*/
+h1 {
+    color: orange;
+    text-align: center;
+}
+
+p {
+    font-size: 150%;
+}
+
+/*id selector*/
+#intro {
+    background-color: yellow;
+}
+
+/*class selector*/
+.first {
+    font-size: 200%;
+}
+
+/*decendent selectors*/
+
+#intro .first {
+
+    color: red; 
+}
+
+#intro .first em {
+
+    color: green; 
+}
+
+

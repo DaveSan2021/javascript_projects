@@ -1,0 +1,126 @@
+.title {
+    font-weight: 1000;
+    font-size: 150%;
+    text-align: center;
+    color: rgb(170, 19, 19);
+}
+
+.card {
+    background: #2dda58d0;
+    color: rgb(156, 83, 83);
+    padding: 2em;
+    border-radius: 20px;
+    width: 100%;
+    margin: 1em;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 10px 5px 5px rgb(103, 206, 103);
+}
+
+body {
+    background: #eef2fcd0;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input {
+    border-radius: 7px;
+    height: 10px;
+    padding: 15px 5px;
+    font-size: 15px;
+}
+
+button {
+    border-radius: 20px;
+    padding: 11px 30px;
+    font-size: 15px;
+    color: rgb(230, 220, 220);
+    background-color: #041d13d0;
+    font-weight: 570;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    transition-duration: 0.1s;
+    background-color: rgb(156, 164, 240);
+}
+
+.expense-list-container {
+
+    margin-top: 1rem;
+    transition: 10ms;
+}
+
+.alert-box {
+    height: 1.25rem;
+    align-items: center;
+    border-radius: 20px;
+    text-transform: capitalize;
+    max-width: 850px;
+    margin: auto;
+}
+
+.alert {
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.alert-danger {
+    color:rgb(170, 19, 19);
+    background: pink;
+}
+
+.alert-success {
+    color: green;
+    background: rgb(189, 255, 224);
+}
+
+.button-container button{
+    margin-top: 7px;
+    font-size: 80%;
+    padding: 10px 20px;
+}
+
+.dlt-btn {
+    background-color: rgb(214, 58, 58);
+}
+
+.edit-btn {
+    background-color: green;
+}
+
+.expense-item {
+    display: grid;
+    grid-template-columns: 1.05fr 1.05fr 1.05fr .85fr;
+    color: black;
+    margin-left: 10px;
+    column-gap: 10px;
+}
+
+.expense-item p:hover {
+    background-color: rgb(212, 211, 211);
+    transition-delay: 100ms;
+}
+
+.listText {
+    color: black;
+    padding-left: 10px;
+}
+
+.expense-item p{
+
+    background-color: aquamarine;
+    border-bottom-style: solid;
+    border-width: 2px;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.clear-button-container {
+
+    justify-content: center;
+}
+
+
